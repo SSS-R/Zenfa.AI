@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
   <title>PC Lagbe? — AI-Powered PC Builder for Bangladesh</title>
-  <meta name="description" content="Stop comparing prices across 10 stores. Tell us your budget, get the perfect build in under 2 minutes. Powered by Zenfa AI." />
-  <meta name="keywords" content="PC builder Bangladesh, PC price comparison BD, buy PC parts Bangladesh, AI PC builder, Zenfa AI" />
+  <meta name="description"
+    content="Stop comparing prices across 10 stores. Tell us your budget, get the perfect build in under 2 minutes. Powered by Zenfa AI." />
+  <meta name="keywords"
+    content="PC builder Bangladesh, PC price comparison BD, buy PC parts Bangladesh, AI PC builder, Zenfa AI" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="PC Lagbe? — AI-Powered PC Builder for Bangladesh" />
-  <meta property="og:description" content="Stop comparing prices across 10 stores. Tell us your budget, get the perfect build in under 2 minutes. Powered by Zenfa AI." />
+  <meta property="og:description"
+    content="Stop comparing prices across 10 stores. Tell us your budget, get the perfect build in under 2 minutes. Powered by Zenfa AI." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="/og-image.png" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -26,14 +32,528 @@
   <!-- Styles -->
   <link rel="stylesheet" href="/src/style.css" />
 </head>
+
 <body>
-  <!-- Content will be built in the next phase -->
-  <main id="app">
-    <p style="color: #e4e4e7; font-family: 'Outfit', sans-serif; text-align: center; padding: 4rem 2rem;">
-      🚀 PC Lagbe? — Coming Soon
-    </p>
-  </main>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PC Lagbe<span class="logo-q">?</span></span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#vendors">For Vendors</a>
+        <a href="#waitlist" class="nav-cta-btn">Join Waitlist</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Launching 2026 in Bangladesh
+      </div>
+      <h1 class="hero-title">
+        Don't build a PC.<br />
+        <span class="gradient-text">Let the PC build itself.</span>
+      </h1>
+      <p class="hero-subtitle">
+        Tell us your budget and purpose. Our AI analyzes thousands of parts across every BD store
+        and delivers the perfect build — in under 2 minutes.
+      </p>
+      <div class="hero-actions">
+        <a href="#waitlist" class="btn btn-primary">
+          <span>Join the Waitlist</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </a>
+        <a href="#problem" class="btn btn-ghost">
+          Learn More
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="6">6+</span>
+          <span class="stat-label">BD Stores Tracked</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">&lt;2 min</span>
+          <span class="stat-label">Build Time</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Compatible Builds</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM ===== -->
+  <section class="section problem" id="problem">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Problem</span>
+        <h2 class="section-title">Buying PC parts in BD is <span class="gradient-text">broken.</span></h2>
+        <p class="section-desc">Every builder goes through the same painful process. We're here to fix it.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card" data-reveal>
+          <div class="problem-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2" />
+              <path d="M8 21h8M12 17v4" />
+              <path d="M7 8h2M11 8h2M15 8h2" />
+            </svg>
+          </div>
+          <h3>10+ Tabs Open</h3>
+          <p>Jumping between StarTech, Ryans, TechLand, Skyland... comparing prices manually across every store.</p>
+        </div>
+        <div class="problem-card" data-reveal>
+          <div class="problem-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 9v4M12 17h.01" />
+              <circle cx="12" cy="12" r="10" />
+            </svg>
+          </div>
+          <h3>No Compatibility Check</h3>
+          <p>Will this RAM fit that motherboard? Is the PSU enough? You're on your own — or trusting a random Facebook
+            group.</p>
+        </div>
+        <div class="problem-card" data-reveal>
+          <div class="problem-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path
+                d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M16 8l-1 5-5 1 1-5z" />
+            </svg>
+          </div>
+          <h3>Overpaying Without Knowing</h3>
+          <p>The same GPU costs 5,000৳ more at one store. Without comparing, you're leaving money on the table.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION ===== -->
+  <section class="section solution" id="solution">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">The Solution</span>
+        <h2 class="section-title">Two products. <span class="gradient-text">One mission.</span></h2>
+        <p class="section-desc">Whether you're a consumer or a business, we've got you covered.</p>
+      </div>
+      <div class="solution-grid">
+        <div class="solution-card" data-reveal>
+          <div class="solution-card-glow"></div>
+          <span class="solution-label consumer-label">For You</span>
+          <h3 class="solution-name">PC Lagbe<span class="logo-q">?</span></h3>
+          <p class="solution-tagline">"Don't build a PC. Let the PC build itself."</p>
+          <ul class="solution-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              AI-powered PC builder
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Price comparison across all BD stores
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Best deals, always updated
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              100% compatible, guaranteed
+            </li>
+          </ul>
+          <a href="#waitlist" class="btn btn-primary btn-full">Join Waitlist →</a>
+        </div>
+        <div class="solution-card vendor-card" data-reveal>
+          <div class="solution-card-glow"></div>
+          <span class="solution-label vendor-label">For Business</span>
+          <h3 class="solution-name">Zenfa <span class="text-accent">AI</span></h3>
+          <p class="solution-tagline">"The intelligence behind the build."</p>
+          <ul class="solution-features">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Build recommendation API
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              White-label ready
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Your inventory, our intelligence
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6ee1c9" stroke-width="2">
+                <path d="M20 6L9 17l-5-5" />
+              </svg>
+              Analytics dashboard
+            </li>
+          </ul>
+          <a href="#vendors" class="btn btn-outline btn-full">Get API Access →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">From budget to build in <span class="gradient-text">3 simple steps.</span></h2>
+      </div>
+      <div class="steps-container">
+        <div class="step" data-reveal>
+          <div class="step-number">01</div>
+          <div class="step-connector"></div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="mock-input">
+                <span class="mock-label">Budget</span>
+                <span class="mock-value">৳ 80,000</span>
+              </div>
+              <div class="mock-input">
+                <span class="mock-label">Purpose</span>
+                <span class="mock-value">🎮 Gaming</span>
+              </div>
+            </div>
+            <h3>Tell us your budget & purpose</h3>
+            <p>Gaming? Editing? Office work? Just drop your numbers and we handle the rest.</p>
+          </div>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-number">02</div>
+          <div class="step-connector"></div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="thinking-animation">
+                <div class="thinking-dot"></div>
+                <div class="thinking-dot"></div>
+                <div class="thinking-dot"></div>
+                <span class="thinking-text">Analyzing 5,000+ parts across BD stores...</span>
+              </div>
+            </div>
+            <h3>Our AI does the heavy lifting</h3>
+            <p>Knapsack optimization + LLM evaluation. We crunch every combination to maximize your value.</p>
+          </div>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <div class="step-visual">
+              <div class="result-card">
+                <div class="result-header">
+                  <span class="result-score">Score: 9.1/10</span>
+                  <span class="result-badge">✓ Compatible</span>
+                </div>
+                <div class="result-parts">
+                  <span>🖥️ RTX 7700 XT</span>
+                  <span>⚡ Ryzen 5 7600</span>
+                  <span>💾 16GB DDR5</span>
+                </div>
+                <div class="result-price">৳ 78,400</div>
+              </div>
+            </div>
+            <h3>Get the perfect build</h3>
+            <p>Complete parts list with links, prices, compatibility verified — ready to buy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERACTIVE TEASER ===== -->
+  <section class="section teaser" id="teaser">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Try It Out</span>
+        <h2 class="section-title">See what <span class="gradient-text">AI can build</span> for you.</h2>
+        <p class="section-desc">This is a preview. Sign up to be the first to use the real thing.</p>
+      </div>
+      <div class="teaser-box" data-reveal>
+        <div class="teaser-controls">
+          <div class="teaser-slider-group">
+            <label class="teaser-label">
+              Budget
+              <span class="teaser-value" id="budgetValue">৳ 80,000</span>
+            </label>
+            <input type="range" id="budgetSlider" class="teaser-slider" min="20000" max="300000" value="80000"
+              step="5000" />
+            <div class="slider-range">
+              <span>৳ 20,000</span>
+              <span>৳ 3,00,000</span>
+            </div>
+          </div>
+          <div class="teaser-purpose-group">
+            <label class="teaser-label">Purpose</label>
+            <div class="purpose-toggles">
+              <button class="purpose-btn active" data-purpose="gaming">🎮 Gaming</button>
+              <button class="purpose-btn" data-purpose="editing">🎬 Editing</button>
+              <button class="purpose-btn" data-purpose="office">💼 Office</button>
+              <button class="purpose-btn" data-purpose="dev">💻 Dev</button>
+            </div>
+          </div>
+        </div>
+        <div class="teaser-result">
+          <div class="teaser-result-placeholder">
+            <div class="lock-icon">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="11" width="18" height="11" rx="2" />
+                <path d="M7 11V7a5 5 0 0110 0v4" />
+              </svg>
+            </div>
+            <p>Sign up to unlock your personalized build</p>
+            <a href="#waitlist" class="btn btn-cta">Join Waitlist to Try →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VENDOR / B2B ===== -->
+  <section class="section vendors" id="vendors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">For Vendors</span>
+        <h2 class="section-title">Power your store with <span class="gradient-text">Zenfa AI.</span></h2>
+        <p class="section-desc">Add AI-powered PC build recommendations to YOUR website. Simple API, your inventory, our
+          intelligence.</p>
+      </div>
+      <div class="vendor-content">
+        <div class="api-preview" data-reveal>
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-filename">api_request.sh</span>
+            </div>
+            <pre class="code-block"><code><span class="code-comment">// Generate a PC build from your inventory</span>
+<span class="code-keyword">POST</span> <span class="code-string">/api/v1/build/generate</span>
+
+{
+  <span class="code-key">"budget"</span>: <span class="code-number">80000</span>,
+  <span class="code-key">"purpose"</span>: <span class="code-string">"gaming"</span>,
+  <span class="code-key">"vendor_id"</span>: <span class="code-string">"your-store-id"</span>
+}
+
+<span class="code-comment">// Response</span>
+{
+  <span class="code-key">"score"</span>: <span class="code-number">9.1</span>,
+  <span class="code-key">"total"</span>: <span class="code-number">78400</span>,
+  <span class="code-key">"parts"</span>: [
+    { <span class="code-key">"name"</span>: <span class="code-string">"RTX 7700 XT"</span>, <span class="code-key">"price"</span>: <span class="code-number">42000</span> },
+    { <span class="code-key">"name"</span>: <span class="code-string">"Ryzen 5 7600"</span>, <span class="code-key">"price"</span>: <span class="code-number">18500</span> },
+    ...
+  ]
+}</code></pre>
+          </div>
+        </div>
+        <div class="pricing-grid" data-reveal>
+          <div class="pricing-card">
+            <h4 class="pricing-name">Free</h4>
+            <div class="pricing-price">$0<span>/mo</span></div>
+            <p class="pricing-desc">Get started, no strings attached.</p>
+            <ul class="pricing-features">
+              <li>100 API calls / month</li>
+              <li>Basic build recommendations</li>
+              <li>Community support</li>
+            </ul>
+            <a href="#waitlist" class="btn btn-outline btn-full">Get Started</a>
+          </div>
+          <div class="pricing-card pricing-popular">
+            <div class="popular-badge">Most Popular</div>
+            <h4 class="pricing-name">Pro</h4>
+            <div class="pricing-price">$0.05<span>/call</span></div>
+            <p class="pricing-desc">Pay only for what you use.</p>
+            <ul class="pricing-features">
+              <li>Unlimited API calls</li>
+              <li>Advanced optimization</li>
+              <li>Priority support</li>
+              <li>Analytics dashboard</li>
+            </ul>
+            <a href="#waitlist" class="btn btn-primary btn-full">Request Access</a>
+          </div>
+          <div class="pricing-card">
+            <h4 class="pricing-name">Enterprise</h4>
+            <div class="pricing-price">Custom</div>
+            <p class="pricing-desc">White-label, dedicated infra.</p>
+            <ul class="pricing-features">
+              <li>White-label solution</li>
+              <li>Dedicated infrastructure</li>
+              <li>Custom integrations</li>
+              <li>SLA guarantee</li>
+            </ul>
+            <a href="#waitlist" class="btn btn-outline btn-full">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF ===== -->
+  <section class="section social-proof" id="social-proof">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Trust</span>
+        <h2 class="section-title">Built by enthusiasts, <span class="gradient-text">for everyone.</span></h2>
+      </div>
+      <div class="proof-content">
+        <div class="tech-stack" data-reveal>
+          <h4 class="proof-subtitle">Built With</h4>
+          <div class="stack-badges">
+            <span class="stack-badge">⚡ FastAPI</span>
+            <span class="stack-badge">⚛️ Next.js</span>
+            <span class="stack-badge">🐍 Python</span>
+            <span class="stack-badge">🤖 LLM-Powered</span>
+            <span class="stack-badge">🧮 Knapsack Algorithm</span>
+            <span class="stack-badge">🗄️ PostgreSQL</span>
+          </div>
+        </div>
+        <div class="data-sources" data-reveal>
+          <h4 class="proof-subtitle">Aggregating Prices From</h4>
+          <div class="vendor-logos">
+            <span class="vendor-logo-badge">StarTech</span>
+            <span class="vendor-logo-badge">Ryans</span>
+            <span class="vendor-logo-badge">TechLand</span>
+            <span class="vendor-logo-badge">Skyland</span>
+            <span class="vendor-logo-badge">UCC</span>
+            <span class="vendor-logo-badge">Binary Logic</span>
+            <span class="vendor-logo-badge more-badge">+ More Coming</span>
+          </div>
+        </div>
+        <div class="trust-stats" data-reveal>
+          <div class="trust-item">
+            <span class="trust-icon">📊</span>
+            <span class="trust-text">Backed by real BD market data</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🔓</span>
+            <span class="trust-text">Open-source core engine</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon">🇧🇩</span>
+            <span class="trust-text">Made for Bangladesh, by Bangladeshis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAITLIST CTA ===== -->
+  <section class="section waitlist" id="waitlist">
+    <div class="container">
+      <div class="waitlist-glow"></div>
+      <div class="section-header">
+        <h2 class="section-title waitlist-title">Be the first to know.</h2>
+        <p class="section-desc">Join the waitlist and get early access when we launch. No spam, just the good stuff.</p>
+      </div>
+      <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <input type="email" name="email" id="waitlistEmail" placeholder="you@email.com" required
+            autocomplete="email" />
+          <button type="submit" class="btn btn-cta">
+            Join Waitlist
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </form>
+      <div class="waitlist-counter">
+        <span class="counter-fire">🔥</span>
+        <span class="counter-number" id="waitlistCounter">0</span>
+        <span class="counter-text">people already on the waitlist</span>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="Discord" title="Discord">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="X / Twitter" title="X / Twitter">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="GitHub" title="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="#" class="social-link" aria-label="Facebook" title="Facebook">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-icon">⚡</span>
+          <span class="logo-text">PC Lagbe<span class="logo-q">?</span></span>
+          <span class="footer-powered">Powered by Zenfa AI</span>
+        </div>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 PC Lagbe? · Made with ❤️ in Bangladesh</p>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="/src/main.js"></script>
 </body>
+
 </html>
