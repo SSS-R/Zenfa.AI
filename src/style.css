@@ -1,0 +1,63 @@
+/* ========================================
+   PC Lagbe? / Zenfa AI — Design System
+   ======================================== */
+
+/* --- CSS Variables --- */
+:root {
+  /* Colors */
+  --color-primary: #4f9e97;
+  --color-primary-light: #6ee1c9;
+  --color-bg: #0f1117;
+  --color-surface: #1a1d27;
+  --color-text: #e4e4e7;
+  --color-text-secondary: #9ca3af;
+  --color-accent: #4f9e97;
+  --color-cta: #f59e0b;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #4f9e97, #6ee1c9);
+
+  /* Typography */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --section-padding: 6rem 2rem;
+  --container-max: 1200px;
+
+  /* Effects */
+  --glass-bg: rgba(26, 29, 39, 0.6);
+  --glass-border: rgba(79, 158, 151, 0.15);
+  --glow-teal: 0 0 30px rgba(79, 158, 151, 0.2);
+}
+
+/* --- Reset & Base --- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Placeholder styling — full build coming soon */
+#app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
