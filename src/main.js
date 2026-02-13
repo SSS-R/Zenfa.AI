@@ -123,33 +123,42 @@ function initNavbar() {
 function initScrollReveal() {
     // Section headers
     gsap.utils.toArray('.section-header').forEach((header) => {
-        gsap.from(header, {
-            scrollTrigger: {
-                trigger: header,
-                start: 'top 85%',
-                once: true,
-            },
-            y: 40,
-            opacity: 0,
-            duration: 0.8,
-            ease: 'power3.out',
-        });
+        gsap.fromTo(header,
+            { y: 40, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: header,
+                    start: 'top 85%',
+                    once: true,
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                ease: 'power3.out',
+            }
+        );
     });
 
     // Data-reveal elements
-    gsap.utils.toArray('[data-reveal]').forEach((el, i) => {
-        gsap.to(el, {
-            scrollTrigger: {
-                trigger: el,
-                start: 'top 85%',
-                once: true,
-                onEnter: () => el.classList.add('revealed'),
-            },
-        });
-        // Add stagger delay based on sibling index
+    gsap.utils.toArray('[data-reveal]').forEach((el) => {
         const siblings = el.parentElement.querySelectorAll('[data-reveal]');
         const idx = Array.from(siblings).indexOf(el);
-        el.style.transitionDelay = `${idx * 0.12}s`;
+
+        gsap.fromTo(el,
+            { y: 30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: el,
+                    start: 'top 90%',
+                    once: true,
+                },
+                y: 0,
+                opacity: 1,
+                duration: 0.8,
+                delay: idx * 0.12,
+                ease: 'power3.out',
+            }
+        );
     });
 
     // Hero entrance animation
@@ -165,18 +174,21 @@ function initScrollReveal() {
 
     // Steps stagger
     gsap.utils.toArray('.step').forEach((step, i) => {
-        gsap.from(step, {
-            scrollTrigger: {
-                trigger: step,
-                start: 'top 85%',
-                once: true,
-            },
-            x: -30,
-            opacity: 0,
-            duration: 0.7,
-            delay: i * 0.15,
-            ease: 'power3.out',
-        });
+        gsap.fromTo(step,
+            { x: -30, opacity: 0 },
+            {
+                scrollTrigger: {
+                    trigger: step,
+                    start: 'top 85%',
+                    once: true,
+                },
+                x: 0,
+                opacity: 1,
+                duration: 0.7,
+                delay: i * 0.15,
+                ease: 'power3.out',
+            }
+        );
     });
 }
 
